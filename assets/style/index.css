@@ -1,0 +1,39 @@
+@import "./reset.css";
+
+.container {
+  width: min(100% - 5px, 1080px);
+  margin-inline: auto;
+}
+
+body {
+  background: #f2f3f4;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #3b3bff;
+  height: 60px;
+  color: #f2f3f4;
+}
+
+nav ul {
+  display: flex;
+  gap: 50px;
+}
+
+nav ul li a {
+  font-size: 22px;
+  color: #f2f3f4;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: orange;
+  animation: pop 0.5s linear 1;
+}
+
+/* ---main---- */
