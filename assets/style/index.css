@@ -19,6 +19,14 @@ header {
   color: #f2f3f4;
 }
 
+.ticket {
+  display: flex;
+}
+
+h1 {
+  margin-left: 5px;
+}
+
 nav ul {
   display: flex;
   gap: 50px;
@@ -32,7 +40,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: orange;
+  color: #ff7b02;
   animation: pop 0.5s linear 1;
 }
 
@@ -104,7 +112,7 @@ nav ul li a:hover {
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 20px; /* add some space between the boxes */
+  grid-gap: 30px 20px; /* add some space between the boxes */
 }
 
 .grid-item {
@@ -120,6 +128,16 @@ nav ul li a:hover {
   color: #fff;
   margin-top: 5px;
   font-size: 18px;
+}
+
+.grid-item:hover {
+  animation: pop 0.5s linear 1;
+}
+
+@keyframes pop {
+  50% {
+    transform: scale(1.1);
+  }
 }
 
 .search-btn:hover {

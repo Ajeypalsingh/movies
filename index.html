@@ -35,7 +35,10 @@
   <body>
     <dialog class="dialog-error"></dialog>
     <header>
-      <h1>TICKETS</h1>
+      <div class="ticket">
+        <img src="./assets/images/ticket.png" alt="ticket-icon" />
+        <h1>TICKETS</h1>
+      </div>
       <nav>
         <ul class="nav-icons">
           <li>
@@ -57,10 +60,18 @@
       <div class="container">
         <div class="inputs">
           <div class="movie">
-            <input type="text" class="search search-movie" />
+            <input
+              type="text"
+              class="search search-movie"
+              placeholder="search for movies"
+            />
           </div>
           <div class="city">
-            <input type="text" class="search search-city" />
+            <input
+              type="text"
+              class="search search-city"
+              placeholder="search for location"
+            />
             <button class="search-btn">Search</button>
           </div>
         </div>
