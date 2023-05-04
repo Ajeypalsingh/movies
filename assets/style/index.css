@@ -1,12 +1,12 @@
 @import "./reset.css";
 
 .container {
-  width: min(100% - 5px, 1080px);
+  width: min(100% - 30px, 1080px);
   margin-inline: auto;
 }
 
 body {
-  background: #f2f3f4;
+  background: #191c24;
   height: 100vh;
 }
 
@@ -14,7 +14,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #3b3bff;
+  background-color: #262930;
   height: 60px;
   color: #f2f3f4;
 }
@@ -36,4 +36,141 @@ nav ul li a:hover {
   animation: pop 0.5s linear 1;
 }
 
+.bar {
+  display: none;
+  font-size: 25px;
+}
+
 /* ---main---- */
+
+.inputs {
+  height: 45px;
+  width: 100%;
+  margin-top: 80px;
+  display: flex;
+  flex-shrink: 1;
+}
+
+.search {
+  height: 40px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: #262930;
+  background-repeat: no-repeat;
+  background-position: 8px;
+  padding-left: 38px;
+  background-size: 25px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.movie {
+  width: 50%;
+}
+
+.city {
+  width: 50%;
+  margin-left: 15px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.search-movie {
+  width: 100%;
+  background-image: url("../images/search.png");
+}
+
+.search-city {
+  width: 65%;
+  background-image: url("../images/location.png");
+}
+
+.search-btn {
+  height: 40px;
+  width: 25%;
+  border: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 800;
+  background-color: #ff7b02;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+  padding: 0 15px;
+}
+
+.grid-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px; /* add some space between the boxes */
+}
+
+.grid-item {
+  text-align: center;
+  height: 330px;
+}
+
+.grid-item img {
+  border-radius: 15px;
+}
+
+.grid-item p {
+  color: #fff;
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+.search-btn:hover {
+  background-color: #c86100;
+}
+
+/* --Media queries-- */
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+  header {
+    justify-content: space-around;
+  }
+  nav {
+    display: none;
+  }
+  .bar {
+    display: block;
+    margin-left: 300px;
+  }
+  .inputs {
+    display: block;
+    height: 100px;
+  }
+
+  .city {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .search-city {
+    width: 70%;
+  }
+
+  .movie {
+    width: 97%;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    margin-left: 20px;
+  }
+
+  .bar {
+    margin-right: 20px;
+  }
+}

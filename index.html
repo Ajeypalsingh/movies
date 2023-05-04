@@ -30,7 +30,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./assets/style/index.css" media="all" />
-    <script src="./assets/script/index.js" defer></script>
+    <script src="./assets/script/index.js" type="module"></script>
   </head>
   <body>
     <dialog class="dialog-error"></dialog>
@@ -49,9 +49,23 @@
           </li>
         </ul>
       </nav>
+      <div class="bar">
+        <i class="fa-solid fa-bars"></i>
+      </div>
     </header>
     <main>
-      <div class="container"></div>
+      <div class="container">
+        <div class="inputs">
+          <div class="movie">
+            <input type="text" class="search search-movie" />
+          </div>
+          <div class="city">
+            <input type="text" class="search search-city" />
+            <button class="search-btn">Search</button>
+          </div>
+        </div>
+        <div class="grid-container"></div>
+      </div>
     </main>
   </body>
 </html>
