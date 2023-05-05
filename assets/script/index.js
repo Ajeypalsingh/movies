@@ -8,7 +8,7 @@ const cityInput = select(".search-city");
 let listmovies = select(".autoComplete-movie");
 let listCities = select(".autoComplete-city");
 
-moviesInput.value = " ";
+moviesInput.value = "";
 cityInput.value = "";
 
 // URLs for external json files
@@ -81,7 +81,7 @@ getMovies();
 
 // Remove dropdown
 function removeDropdown(input, list) {
-  if (input.value.length === 0) list.innerHTML = " ";
+  if (input.value.length === 0) list.innerHTML = "";
 }
 
 // getting input by clicking on list
