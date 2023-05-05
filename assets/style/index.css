@@ -17,14 +17,11 @@ header {
   background-color: #262930;
   height: 60px;
   color: #f2f3f4;
+  padding: 0 50px;
 }
 
 .ticket {
   display: flex;
-}
-
-h1 {
-  margin-left: 5px;
 }
 
 nav ul {
@@ -55,7 +52,6 @@ nav ul li a:hover {
   width: 100%;
   margin-top: 80px;
   display: flex;
-  flex-shrink: 1;
 }
 
 .hidden {
@@ -119,6 +115,7 @@ nav ul li a:hover {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 30px 20px;
+  margin-bottom: 20px;
 }
 
 .grid-item {
@@ -219,11 +216,14 @@ button:hover {
   }
 
   .search-city {
-    width: 70%;
+    width: 69%;
   }
 
   .movie {
     width: 97%;
+  }
+  .ticket img {
+    display: none;
   }
 }
 

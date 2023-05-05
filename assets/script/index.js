@@ -80,8 +80,8 @@ async function getMovies() {
 getMovies();
 
 // Remove dropdown
-function removeDropdown(input) {
-  if (input.value.length === 0) listmovies.innerHTML = " ";
+function removeDropdown(input, list) {
+  if (input.value.length === 0) list.innerHTML = " ";
 }
 
 // getting input by clicking on list
@@ -120,6 +120,7 @@ async function getCities() {
       onEvent(input, "keyup", function () {
         let inputValue = input.value.toLowerCase();
 
+        removeDropdown(cityInput, listCities);
         if (inputValue.length === 0) return;
 
         listCities.innerHTML = " ";
