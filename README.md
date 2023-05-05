@@ -1,4 +1,4 @@
-### OUR HOUSE WEBSITE
+### Search Movies 
 
 Search for movies and theatre location
 
