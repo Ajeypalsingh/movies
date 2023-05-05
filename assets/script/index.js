@@ -8,7 +8,7 @@ const cityInput = select(".search-city");
 let listmovies = select(".autoComplete-movie");
 let listCities = select(".autoComplete-city");
 
-moviesInput.value = "";
+moviesInput.value = " ";
 cityInput.value = "";
 
 // URLs for external json files
