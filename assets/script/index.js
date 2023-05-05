@@ -56,7 +56,7 @@ async function getMovies() {
     function autoInputs(array, input) {
       onEvent(input, "keyup", function () {
         let inputValue = input.value.toLowerCase();
-        removeDropdown(moviesInput);
+        removeDropdown(moviesInput, listmovies);
 
         if (inputValue.length === 0) return;
 
